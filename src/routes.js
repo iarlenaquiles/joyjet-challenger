@@ -4,6 +4,12 @@ import { createStackNavigator } from "@react-navigation/stack";
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import { NavigationContainer } from "@react-navigation/native";
 
+import HomeScreen from "./pages/Home";
+import FavoriteScreen from "./pages/Favorite";
+import ItemScreen from "./pages/Item";
+
+import CustomDrawer from "./components/CustomDrawer";
+
 const AppStack = createStackNavigator();
 const AppDrawer = createDrawerNavigator();
 
@@ -26,7 +32,7 @@ export default function Routes() {
     <NavigationContainer>
       <AppDrawer.Navigator
         initialRouteName="Home"
-        drawerPosition="right"
+        drawerPosition="left"
         drawerContent={props => <CustomDrawer {...props} />}
       >
         <AppDrawer.Screen name="Home" component={HomeNavigator} />
