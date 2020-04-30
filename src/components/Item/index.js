@@ -1,11 +1,16 @@
 import React from "react";
 import { View, TouchableOpacity, Text } from "react-native";
 
+import { useNavigation } from "@react-navigation/native";
 import styles from "./styles";
 import Carousel from "../Carousel";
 
 export default function Item({ item, category }) {
-  function handleClick() {}
+  const navigation = useNavigation();
+
+  function handleClick() {
+    navigation.navigate("ItemScreen", { item: item, category: category });
+  }
 
   return (
     <View style={styles.container}>
