@@ -13,7 +13,7 @@ export default props => {
   return (
     <DrawerContentScrollView {...props} contentContainerStyle={{ flexGrow: 1 }}>
       <View style={styles.container}>
-        <View style={styles.containerBottom}>
+        <View style={styles.containerTop}>
           <View style={styles.containerImage}>
             <Image source={logo} style={{ height: 120, width: 120 }} />
             <Text style={styles.textName} fontWeight="bold">
