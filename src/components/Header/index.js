@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigation } from "@react-navigation/native";
 
-import { View, TouchableOpacity, Text, SafeAreaView } from "react-native";
+import { TouchableOpacity, Text, SafeAreaView } from "react-native";
 import { Feather } from "@expo/vector-icons";
 
 import styles from "./styles";
