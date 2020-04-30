@@ -1,19 +1,20 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+import "./src/config/ReactotronConfig";
+import { PersistGate } from "redux-persist/integration/react";
+import { Provider } from "react-redux";
+import { StatusBar } from "react-native";
 
-export default function App() {
+import { store, persistor } from "./src/store";
+
+import Routes from "./src/routes";
+
+export default function Index() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-    </View>
+    <Provider store={store}>
+      <PersistGate persistor={persistor}>
+        <StatusBar barStyle="dark-content" backgroundColor="#fff" />
+        <Routes />
+      </PersistGate>
+    </Provider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
