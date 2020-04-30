@@ -6,7 +6,7 @@ export default reducers => {
     {
       key: "joyjet",
       storage: AsyncStorage,
-      whitelist: ["item"]
+      whitelist: ["favorites"]
     },
     reducers
   );
