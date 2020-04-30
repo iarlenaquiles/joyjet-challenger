@@ -11,12 +11,12 @@ export default function Header() {
   return (
     <SafeAreaView style={styles.container}>
       <TouchableOpacity
-        style={styles.containerBtnMenu}
+        style={styles.btn}
         onPress={() => navigation.toggleDrawer()}
       >
         <Feather name="menu" size={30} />
       </TouchableOpacity>
-      <Text style={styles.textContainer}>Digital Space</Text>
+      <Text style={styles.text}>Digital Space</Text>
     </SafeAreaView>
   );
 }

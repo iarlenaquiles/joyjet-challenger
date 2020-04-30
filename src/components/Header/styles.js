@@ -13,10 +13,10 @@ export default StyleSheet.create({
     alignItems: "center",
     flexDirection: "row"
   },
-  containerBtnMenu: {
+  btn: {
     marginLeft: 20
   },
-  textContainer: {
+  text: {
     color: "#3964de",
     fontSize: 20,
     marginLeft: 10
