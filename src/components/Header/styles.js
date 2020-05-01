@@ -5,7 +5,7 @@ export default StyleSheet.create({
     position: "absolute",
     flex: 1,
     top: 0,
-    height: 40,
+    height: 60,
     width: "100%",
     backgroundColor: "#fafafa",
     justifyContent: "flex-start",

@@ -8,6 +8,6 @@ export default StyleSheet.create({
     justifyContent: "center"
   },
   list: {
-    marginTop: 38
+    marginTop: 60
   }
 });
