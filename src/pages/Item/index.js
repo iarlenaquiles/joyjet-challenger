@@ -5,7 +5,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { useRoute, useNavigation } from "@react-navigation/native";
 import Carousel from "../../components/Carousel";
 import actions from "../../redux/favorites/types";
-import { toggleFavorite } from "../../store/modules/favorites/actions";
 import styles from "./styles";
 
 const Favorite = ({ favorite, onPress }) => (
