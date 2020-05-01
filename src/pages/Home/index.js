@@ -17,7 +17,7 @@ export default function Home() {
   useEffect(() => {
     async function loadItems() {
       const result = await api.get("mobile-test-one.json");
-      console.tron.log(result);
+
       setItems(result.data);
       setLoading(false);
     }
@@ -27,7 +27,7 @@ export default function Home() {
 
   return (
     <View style={styles.container}>
-      <Header navigation={navigation} />
+      <Header title={"Digital Space"} navigation={navigation} />
 
       {loading ? (
         <Loading />
