@@ -6,7 +6,7 @@ import { Feather } from "@expo/vector-icons";
 
 import styles from "./styles";
 
-export default function Header() {
+export default function Header({ title }) {
   const navigation = useNavigation();
   return (
     <SafeAreaView style={styles.container}>
@@ -16,7 +16,7 @@ export default function Header() {
       >
         <Feather name="menu" size={30} />
       </TouchableOpacity>
-      <Text style={styles.text}>Digital Space</Text>
+      <Text style={styles.text}>{title}</Text>
     </SafeAreaView>
   );
 }
