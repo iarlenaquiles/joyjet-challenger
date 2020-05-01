@@ -12,8 +12,8 @@ export default function Category({ item }) {
       </View>
 
       {item.items.length > 0 &&
-        item.items.map((item, index) => (
-          <Item key={index} item={item} category={item.category} />
+        item.items.map((i, index) => (
+          <Item key={index} item={i} category={item.category} />
         ))}
     </View>
   );
